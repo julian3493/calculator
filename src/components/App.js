@@ -1,11 +1,11 @@
 import Display from './Display';
-import Button from './Button';
+import ButtonPanel from './ButtonPanel';
 
 function App() {
   return (
     <div className="App">
       <Display />
-      <Button name="AC" />
+      <ButtonPanel />
     </div>
   );
 }
