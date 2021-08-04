@@ -5,9 +5,9 @@ const calculate = (data, btn) => {
 
   switch (btn) {
     case 'AC':
-      total = '';
+      total = null;
       next = '';
-      operation = '';
+      operation = null;
       break;
 
     case '+/-':
