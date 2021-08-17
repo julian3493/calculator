@@ -25,12 +25,15 @@ const calculate = (data, btn) => {
         next = `${next}.`;
         if(!operation) total = `${total}.`
       }
-      break;
+    break;
 
     case '=':
-      if (!total || !next || !operation) return 0;
-      total = (total + operation + next).toString();
-      break;
+      if (operation) {
+      total = operate(total, next, operation).toString();
+      next = total;
+      operation = null;
+      }
+    break;
 
     case '+': case '-': case 'X': case '÷': case '%':
       if (operation) {
@@ -66,11 +69,13 @@ const calculate = (data, btn) => {
     default:
       total = 'Error';
   }
+
   result = {
     total,
     next,
     operation,
   }
+
   return result;
 };
 

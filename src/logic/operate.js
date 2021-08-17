@@ -17,9 +17,10 @@ const operate = (numberOne, numberTwo, operation) => {
     case 'X':
       return one.times(two);
     case '÷':
+      if (numberTwo === '0') return 'Error';
       return one.div(two);
     case '%':
-      return one.mod(two);
+      return two.div(100);
     default:
       return 'Error';
   }
