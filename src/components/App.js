@@ -26,7 +26,6 @@ class App extends React.Component {
     const { total } = this.state;
     const { next } = this.state;
     const { operation } = this.state;
-    console.log(this.state);
     return (
       <div className="App">
         <Display result={total} next={next} operation={operation} />
