@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = (props) => {
-  const { next } = props;
+const Display = ({ result }) => {
+  const { next } = result;
+  console.log(result);
   return (
     <div>
       <h1>{next}</h1>
@@ -11,11 +12,11 @@ const Display = (props) => {
 };
 
 Display.propTypes = {
-  next: PropTypes.string,
-};
-
-Display.defaultProps = {
-  next: '0',
+  result: PropTypes.shape({
+    total: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    next: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    operation: PropTypes.string,
+  }).isRequired,
 };
 
 export default Display;
