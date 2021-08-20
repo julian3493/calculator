@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/display.css';
 
 const Display = ({ result }) => {
   const { next } = result;
-  console.log(result);
   return (
-    <div>
+    <div className="display">
       <h1>{next}</h1>
     </div>
   );
