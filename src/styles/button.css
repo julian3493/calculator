@@ -1,0 +1,16 @@
+.btn {
+  display: flex;
+  width: 175px;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.btn0 {
+  width: 350px;
+}
+
+.btnColor {
+  background-color: orange;
+}
