@@ -1,0 +1,15 @@
+.panel,
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.panel {
+  flex-direction: column;
+  width: 700px;
+}
+
+.row {
+  height: 100px;
+  width: 100%;
+}

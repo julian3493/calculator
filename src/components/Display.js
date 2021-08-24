@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/display.css';
 
-const Display = (props) => {
-  const { next } = props;
+const Display = ({ result }) => {
+  const { next } = result;
   return (
-    <div>
+    <div className="display">
       <h1>{next}</h1>
     </div>
   );
 };
 
 Display.propTypes = {
-  next: PropTypes.string,
-};
-
-Display.defaultProps = {
-  next: '0',
+  result: PropTypes.shape({
+    total: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    next: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    operation: PropTypes.string,
+  }).isRequired,
 };
 
 export default Display;
