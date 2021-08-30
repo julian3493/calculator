@@ -8,3 +8,7 @@
   align-items: center;
   width: 700px;
 }
+
+.display h1 {
+  color: white;
+}
