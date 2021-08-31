@@ -1,7 +1,7 @@
 import React from 'react';
 
 const home = () => (
-  <div className="quote">
+  <div>
     <h2>Welcome to my page!</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus velit ex, a pellentesque
