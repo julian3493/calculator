@@ -1,12 +1,14 @@
 import React from 'react';
+import '../styles/quote.css';
 
 const quote = () => (
-  <section>
-    <h3>Quote of the day</h3>
-    <p>Mathematics is not about number, equations, computations or algorithms:</p>
-    <p>is about understading.</p>
-    <span> - William Paul Thurston.</span>
-  </section>
+  <div className="container">
+    <p className="quote">
+      Mathematics is not about number, equations, computations or algorithms:
+      is about understading.
+      <span> - William Paul Thurston.</span>
+    </p>
+  </div>
 );
 
 export default quote;
