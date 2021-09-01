@@ -20,7 +20,7 @@ const operate = (numberOne, numberTwo, operation) => {
       if (numberTwo === '0') return 'Error';
       return one.div(two);
     case '%':
-      return two.div(100);
+      return one.div(100);
     default:
       return 'Error';
   }
