@@ -21,22 +21,22 @@ describe('Calculate', () => {
     expect(total).toEqual({ total: '4', next: '4', operation: null });
   });
 
-  it('it test the addition of numbers using an operation button button', () => {
+  it('it test the addition of numbers using an operation button', () => {
     const total = calculate({ total: '8', next: '5', operation: '+' }, '+');
     expect(total).toEqual({ total: '13', next: '13', operation: '+' });
   });
 
-  it('it test the substract of numbers using an operation button button', () => {
+  it('it test the substract of numbers using an operation button', () => {
     const total = calculate({ total: '8', next: '7', operation: '-' }, '+');
     expect(total).toEqual({ total: '1', next: '1', operation: '+' });
   });
 
-  it('it test multiply the numbers using an operation button button', () => {
+  it('it test multiply the numbers using an operation button', () => {
     const total = calculate({ total: '2', next: '7', operation: 'X' }, '+');
     expect(total).toEqual({ total: '14', next: '14', operation: '+' });
   });
 
-  it('it test the divide of numbers using an operation button button', () => {
+  it('it test the divide of numbers using an operation button', () => {
     const total = calculate({ total: '8', next: '2', operation: '÷' }, '+');
     expect(total).toEqual({ total: '4', next: '4', operation: '+' });
   });

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it test the render Home page 1`] = `
+<div
+  className="container"
+>
+  <p
+    className="quote"
+  >
+    Mathematics is not about number, equations, computations or algorithms: is about understading.
+    <span>
+       - William Paul Thurston.
+    </span>
+  </p>
+</div>
+`;
